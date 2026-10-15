@@ -39,5 +39,12 @@ Resource: CISA — Implementing Phishing-Resistant MFA - https://www.cisa.gov/re
 Oman’s Personal Data Protection Law regulates how personal data is processed. An authority operating a government login service should identify a lawful basis for processing, explain how citizens’ data will be used, apply appropriate security measures, and respect individuals’ rights under the law. It should also manage data sharing and retention responsibly and check the applicable executive regulations and requirements before launching the service.
 
 Resource: Oman Ministry of Transport, Communications and Information Technology - https://www.mtcit.gov.om/
+
 #Misconception in My Track
+A common misconception is that OAuth 2.0 and OpenID Connect are the same technology and can be used interchangeably. In fact, OAuth 2.0 is mainly designed to provide authorized access to resources, while OpenID Connect adds an identity layer that allows an application to verify a user’s identity. This difference matters for the government login service because secure login requires identity verification, not only permission to access resources. OpenID Connect is therefore suitable for authentication, while OAuth 2.0 supports delegated authorization.
+
+Evidence: OpenID Connect Core 1.0, section 1 — Introduction.
+
+
 #Open Question
+How can the government login service balance strong account security with an easy login experience for citizens who use different devices and have different levels of digital knowledge?
