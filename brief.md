@@ -3,6 +3,8 @@ Track:  Software
 
 #Overview
 A secure national digital login service allows citizens to access different government services using one account through a website or mobile app. Software technologies such as OAuth 2.0 and OpenID Connect support secure access and user authentication. Artificial intelligence can help identify suspicious login activity, but its risks must be assessed before use. Mobile security protects information stored on users’ devices and controls access to sensitive features. Networking technologies help devices communicate securely, while DNS over HTTPS can protect DNS queries from being easily observed by others on the network. Cybersecurity methods, including phishing-resistant authentication, reduce the risk of account theft. Data protection practices help the authority collect, store, and process citizens’ personal information responsibly under Oman’s Personal Data Protection Law. These six fields work together to make the service reliable, secure, and convenient for citizens. This brief also examines how OAuth 2.0 and OpenID Connect support secure login and delegated access.
+
+
 #Software
 OAuth 2.0 and OpenID Connect are related but have different purposes. OAuth 2.0 allows an application to access resources with permission from the user. OpenID Connect adds an identity layer to OAuth 2.0 and helps an application verify who the user is. For the government login service, OpenID Connect is suitable for user login, while OAuth 2.0 supports authorized access to other services and resources.
 
@@ -19,8 +21,23 @@ Resource: NIST AI Risk Management Framework - https://www.nist.gov/itl/ai-risk-m
 Android runtime permissions allow users to control an app’s access to sensitive features and information, such as the camera, microphone, and location. An app should request a permission when the user tries to use the feature that needs it, rather than asking for every permission at the beginning. The app should explain why access is needed and continue to work where possible if the user denies permission.
 
 Resource: Android Developers — Request app permissions - https://developer.android.com/training/permissions/requesting
+
 #Networking
+DNS over HTTPS (DoH) sends DNS queries through an encrypted HTTPS connection. This helps prevent other people on the same network from easily reading or changing DNS queries. However, DoH does not hide all internet activity, protect against phishing, or make a website safe. The government login service should use DoH as one layer of protection alongside other security controls.
+
+
+Resource: Cloudflare Learning Center — What is DNS over HTTPS? - https://www.cloudflare.com/learning/dns/dns-over-https/
+
+
 #Cybersecurity
+Phishing-resistant authentication helps protect users from fake login pages that try to steal passwords or verification codes. Passkeys and security keys using FIDO2/WebAuthn can provide phishing-resistant authentication. By contrast, SMS codes and ordinary one-time passwords can still be stolen or tricked from users. The authority should consider phishing-resistant methods to protect citizens’ accounts, especially when accessing sensitive government services.
+
+Resource: CISA — Implementing Phishing-Resistant MFA - https://www.cisa.gov/resources-tools/resources/implementing-phishing-resistant-mfa
+
+
 #Data
+Oman’s Personal Data Protection Law regulates how personal data is processed. An authority operating a government login service should identify a lawful basis for processing, explain how citizens’ data will be used, apply appropriate security measures, and respect individuals’ rights under the law. It should also manage data sharing and retention responsibly and check the applicable executive regulations and requirements before launching the service.
+
+Resource: Oman Ministry of Transport, Communications and Information Technology - https://www.mtcit.gov.om/
 #Misconception in My Track
 #Open Question
